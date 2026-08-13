@@ -1,92 +1,88 @@
+# 1. Research Significance
 
-# 12. 研究的意義
+## 1.1 Previous Experimental Objectives
 
-## 12.1 これまでの実験目的
+In previous experiments, AI performance was evaluated using a large number of test samples.
 
-これまでの実験では、大量のテストデータを用いてAIの性能評価を行ってきた。
+The objectives were to measure:
 
-目的は、
+* How accurately the model could classify data
+* How well it could generalize to unseen data
+* How model performance could be compared quantitatively
 
-* どれだけ正確に分類できるか
-* 未知データに対してどの程度一般化できるか
-* モデル性能を数値として比較できるか
-
-を測定することであった。
-
-つまり、従来型の機械学習評価では「大量のデータに対して高い精度を出せるか」が重要だった。
+In other words, traditional machine learning evaluation has focused on whether a model can achieve high accuracy on large-scale datasets.
 
 ---
 
-## 12.2 新しい評価への転換
+## 1.2 A Shift Toward a New Evaluation Paradigm
 
-しかし、本研究で目指す方向は単純な性能競争ではない。
+However, the goal of this research is not simply a competition for higher performance.
 
-これから重要になるのは、
+The important question moving forward is not:
 
-「大量のデータを処理できるか」
+"Can the AI process a massive amount of data?"
 
-ではなく、
+but rather:
 
-「個別の対象をどのように理解するか」
+"How does the AI understand each individual object?"
 
-である。
+Therefore, it is not necessary to prepare a large number of test samples.
 
-そのため、テストデータを大量に用意する必要はない。
-
-また、必ずしもテストという形式で性能を測定する必要もない。
+Furthermore, evaluation does not always need to take the form of conventional testing.
 
 ---
 
-## 12.3 一枚一枚を理解するAI
+## 1.3 AI That Understands Each Individual Example
 
-本研究では、画像を単なる大量データの一部として扱うのではなく、一枚一枚のデータが持つ意味に注目する。
+This research does not treat images as merely parts of a large dataset.
 
-重要なのは、
+Instead, it focuses on the meaning contained in each individual sample.
 
-* この図形は何を表しているのか
-* なぜこの分類になるのか
-* 少数の例からどの概念を形成したのか
+The important questions are:
 
-という個別データとの関係である。
+* What does this shape represent?
+* Why does this example belong to this category?
+* What concept was formed from only a small number of examples?
 
----
-
-## 12.4 未来の応用：ゲームとしての学習
-
-将来的には、AI評価を大量のベンチマークテストではなく、ゲーム形式へ発展させる。
-
-例：
-
-* ユーザーが図形を描く
-* AIが少数の例からルールを推測する
-* ユーザーとAIが概念理解を競う
-
-この場合、必要なのは大量の訓練画像や大量のテスト画像ではない。
-
-目標：
-
-* 訓練データ
-* テストデータ
-
-を合わせて6枚以内程度の少数例から、AIがどのような理解を形成するかを見る。
+The relationship between the AI and each individual piece of data becomes the central focus.
 
 ---
 
-## 12.5 人間らしさを評価する
+## 1.4 Future Application: Learning as a Game
 
-本当に興味深い評価対象は、単純な正解率ではない。
+In the future, AI evaluation can evolve from large-scale benchmark testing into a game-like experience.
 
-人間は少数の例から、
+For example:
 
-「これは同じ種類だ」
-「これは違う」
+* A user draws shapes
+* The AI infers rules from a small number of examples
+* The user and AI compete in understanding concepts
 
-という概念を形成する。
+In such a scenario, large training datasets and large test datasets are no longer the primary requirement.
 
-そのため、本研究では大量データによる性能評価ではなく、
+The goal is to investigate how AI forms concepts from only a few examples, with:
 
-「少ない経験から意味を理解できるか」
+* Training data
+* Test data
 
-という人間らしい認識能力を検証する。
+combined within approximately six samples or fewer.
 
-少数の個別データを丁寧に設計することが、今後のAI研究において重要になる。
+---
+
+## 1.5 Evaluating Human-Like Intelligence
+
+The most interesting evaluation target is not simply classification accuracy.
+
+Humans can form concepts from only a small number of examples:
+
+"This belongs to the same category."
+
+"This is different."
+
+Therefore, this research does not focus on evaluating performance through massive datasets.
+
+Instead, it investigates a more human-like ability:
+
+"Can AI understand meaning from limited experience?"
+
+Carefully designing small, individual datasets will become an important direction for future AI research.
